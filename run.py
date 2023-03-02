@@ -1,3 +1,15 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+
+print("""\033[32m 
+   ______                         __   ____     __                __
+  / ____/_  _______________  ____/ /  /  _/____/ /___ _____  ____/ /
+ / /   / / / / ___/ ___/ _ \/ __  /   / // ___/ / __ `/ __ \/ __  / 
+/ /___/ /_/ / /  (__  )  __/ /_/ /  _/ /(__  ) / /_/ / / / / /_/ /  
+\____/\____/_/  /____/\___/\____/  /___/____/_/\____/_/ /_/\____/   
+-----------------------------------------------------------------
+#################################################################
+""")
+
+
+print("\033[1;30mYour sailbot semester ended up with a crash on this mystic island")
+print("The island is tropical with palms and white sand and a jungle in the distant\n")
+
