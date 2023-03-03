@@ -1,5 +1,5 @@
 
-# Import 
+# Import
 
 import random
 import os
@@ -7,7 +7,7 @@ from time import sleep
 
 # ASCI color codes
 
-#Main logo in ASCI Code
+# Main logo in ASCI Code
 
 
 def mainLogo():
@@ -22,7 +22,7 @@ def mainLogo():
 #################################################################
 """)
 
-#Game over screen in ASCI Code
+# Game over screen in ASCI Code
 
 def gameOver():
     print("""\033[31m
@@ -53,7 +53,7 @@ def tryAgain():
 
 
 
-#Complete game logo
+# Complete game logo
 
 def winScreen():
     print("\033[32m ################################")
@@ -66,7 +66,7 @@ def clearScreen():
     input("\033[30mPress ENTER key to Continue...")
     os.system("clear")
 
-# quick clear
+# Quick clear
 
 def qclear():
     os.system("clear") 
@@ -236,15 +236,6 @@ def bridge():
     
 
 
-#---------------------- NEW GAME STARTS HERE ------------------------
+# ---------------------- NEW GAME STARTS HERE ------------------------
 
 newGame()
-
-
-
-
-
-
-
-
-
