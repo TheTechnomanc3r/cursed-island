@@ -5,6 +5,8 @@ import random
 import os
 from time import sleep
 
+# ASCI color codes
+
 
 #Main logo in ASCI Code
 
@@ -41,7 +43,7 @@ def winScreen():
 # Function to clear the screen
 
 def clearScreen():
-    input("Press any key to Continue")
+    input("Press any key to Continue...")
     os.system("clear")
 
 
@@ -50,16 +52,16 @@ mainLogo()
 
 print("Welcome! Do you want to start a new game? y / n")
 
-startChoice = input(">> ")
+startGame = input(">> ")
 
-if startChoice == ("y"):
+if startGame == ("y"):
     
 
     print("Game Starting...")
     sleep(0.5)
-    clearScreen()
+    os.system("clear")
 
-elif startChoice == ("n"):
+elif startGame == ("n"):
     print("Closing game ...")
     sleep(1)
     exit()
@@ -67,13 +69,18 @@ elif startChoice == ("n"):
 else:
     print("Invalid choice! Please enter y or n")             
 
-
+# Prologue text
 
 print("[Prologue]\n")
 print("\033[1;30mYour lovely sailbot semester in the caribbean didn´t go as planned,")
 print("and after going trough a heavy storm you crashed on this deserted island")
 
-print("The Island is tropical with palms and white sand and a dense jungle in the distant\n")
+print("The Island is tropical with palms, white sand and a dense jungle is seen in the distant.\n")
 
-clearScreen()
 
+
+# Starting Choice
+
+print("Do you want to go to the jungle or go back to the boat?\n")
+print("go to \033[1;32m(J)ungle\n")
+print("\033[1;30mgo back to \033[1;34m(B)oat\n")
