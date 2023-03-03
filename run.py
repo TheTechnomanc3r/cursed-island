@@ -1,4 +1,6 @@
 
+#Main logo in ASCI Code
+
 print("""\033[32m 
    ______                         __   ____     __                __
   / ____/_  _______________  ____/ /  /  _/____/ /___ _____  ____/ /
@@ -9,7 +11,7 @@ print("""\033[32m
 #################################################################
 """)
 
-#Game over screen
+#Game over screen in ASCI Code
 
 def gameOver():
   print("""\033[31m
@@ -22,6 +24,9 @@ def gameOver():
 
 
 
-print("\033[1;30mYour sailbot semester ended up with a crash on this mystic island")
+print("Welcome! Do you want to start a new game? Y/N")
+
+
+print("\033[1;30mYour lovely sailbot semester in the caribbean ended up with a crash on a mystic island")
 print("The island is tropical with palms and white sand and a jungle in the distant\n")
 
