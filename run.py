@@ -9,6 +9,7 @@ from time import sleep
 
 #Main logo in ASCI Code
 
+
 def mainLogo():
 
     print("""\033[32m 
@@ -55,14 +56,14 @@ def tryAgain():
 #Complete game logo
 
 def winScreen():
-    print("################################")
-    print("### congratulations you won! ###")
-    print("################################")  
+    print("\033[32m ################################")
+    print("\033[32m ### congratulations you won! ###")
+    print("\033[32m ################################\n")  
 
 # Function to clear the screen
 
 def clearScreen():
-    input("Press ENTER key to Continue...")
+    input("\033[30mPress ENTER key to Continue...")
     os.system("clear")
 
 # quick clear
@@ -141,6 +142,8 @@ def firstChoice():
 def secondChoice():
 
 
+
+
     secChoice = input("\033[30m>> ")
 
     if secChoice == ("r"):
@@ -161,6 +164,29 @@ def secondChoice():
         qclear()
         jungle()       
 
+def thirdChoice():
+
+    triChoice = input("\033[30m>> ")
+
+    if triChoice == ("r"):
+        print("You charge towards the boat")
+        winScreen()
+
+
+    elif triChoice == ("f"):
+        print("You to start to fight the Gorilla!")
+        print("But the Gorilla is too strong and knocks you out!")
+
+        sleep(0.3)
+        gameOver()
+        tryAgain()
+
+    else:
+        print("\033[31mInvalid choice Select r or w")
+        sleep(0.5)
+        qclear()
+        bridge()    
+
 # Jungle
 def jungle():
 
@@ -168,7 +194,7 @@ def jungle():
     print("\033[30mupon a large river with a hanging bridge on top of it")
     print("\033[30m--------------------------------------------------")
     print("\033[30mIt looks unstable, But your best bet is to continue...\n")
-    print("\033[30mDo you wanna \033[34m(R)un fast over or \n \033[35m (W)alk slowly over it")  
+    print("\033[30mDo you wanna \033[34m(R)un fast over or \n \033[32m (W)alk slowly over it")  
 
     print("""\033[36m
     / |           /|    
@@ -189,8 +215,24 @@ def jungle():
 
 
 def bridge():
-    print("You made it over the Bridge! \n")
-    winScreen()  
+    qclear()
+    print("")
+    print("\033[30mYou made it over safely! \n")
+    print("\033[30mYou see the coast again and close to it, a motorboat it seems")
+    print("\033[30m--------------------------------------------------------")
+    print("""\033[34m
+            ____
+           /     \__ 
+   _______/          \\
+~~/__________________/~~~~~~
+
+    """)
+    clearScreen()
+    print("")
+    print("\033[32mSuddenly! An agressive gorilla showed up from the jungle!!\n")
+    print("\033[30mDo you wanna \033[34m(F)ight it! or \n \033[33m (R)un to the boat?\n")
+
+    thirdChoice() 
     
 
 
@@ -202,4 +244,7 @@ newGame()
 
 
 
-# Cave
+
+
+
+
