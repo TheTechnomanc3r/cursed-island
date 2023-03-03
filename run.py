@@ -107,7 +107,7 @@ def newGame():
     else:
         print("Invalid choice! Please enter y or n")
         qclear()
-        sleep(0.3)
+        sleep(0.2)
         newGame()             
 
 
@@ -121,29 +121,54 @@ def firstChoice():
 
     if startChoice == ("j"):
         print("You head for the jungle!")
-        clearScreen()
+        qclear()
         jungle()
 
     elif startChoice == ("b"):
         print("You go back to the boat")
+        print("And is struck by lightning!")
         sleep(0.3)
         gameOver()
         tryAgain()
 
     else:
-        print("Invalid choice Select J or B")
-        sleep(0.3)
-        firstChoice()
+        print("\033[31mInvalid choice! Select J or B")
+        sleep(0.6)
         qclear()
+        prologue()
+        firstChoice()
+
+def secondChoice():
+
+
+    secChoice = input("\033[30m>> ")
+
+    if secChoice == ("r"):
+        print("You charge and sprint over the bridge!")
+        bridge()
+
+
+    elif secChoice == ("w"):
+        print("You to start to walk slowly over the bridge")
+        print("But the bridge collapses and throws you in the river")
+        sleep(0.3)
+        gameOver()
+        tryAgain()
+
+    else:
+        print("\033[31mInvalid choice Select r or w")
+        sleep(0.5)
+        qclear()
+        jungle()       
 
 # Jungle
 def jungle():
 
-    print("You walk trough the dense jungle and suddenly you stumble")
-    print("upon a large river with a hanging bridge on top of it")
-    print("--------------------------------------------------")
-    print("It looks unstable, But your best bet is to continue...\n")
-    print("Do you wanna (R)un fast over or \n walk (S)lowly over it")  
+    print("\033[30mYou walk trough the dense jungle and suddenly you stumble")
+    print("\033[30mupon a large river with a hanging bridge on top of it")
+    print("\033[30m--------------------------------------------------")
+    print("\033[30mIt looks unstable, But your best bet is to continue...\n")
+    print("\033[30mDo you wanna \033[34m(R)un fast over or \n \033[35m (W)alk slowly over it")  
 
     print("""\033[36m
     / |           /|    
@@ -155,11 +180,17 @@ def jungle():
    _________/___
   /________/___/
  _________/____
-/________/___/
+/________/___/ 
     
     
     """) 
 
+    secondChoice()
+
+
+def bridge():
+    print("You made it over the Bridge! \n")
+    winScreen()  
     
 
 
@@ -169,7 +200,6 @@ newGame()
 
 
 
-# Bridge
 
 
 # Cave
