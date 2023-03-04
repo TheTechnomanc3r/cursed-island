@@ -37,7 +37,7 @@ def tryAgain():
     print("You died..")
     print("Do you wanna try again? y/n")
 
-    tryChoice = input(">> ")
+    tryChoice = input(">>\n")
 
     if tryChoice == ("y"):
               
@@ -89,7 +89,7 @@ def newGame():
 
     print("\033[1;30mWelcome! Do you want to start a new game? y / n")
 
-    startGame = input(">> ")
+    startGame = input(">>\n")
 
     if startGame == ("y"):
     
@@ -118,7 +118,7 @@ def firstChoice():
     print("go to \033[1;32m(J)ungle\n")
     print("\033[1;30mgo back to \033[1;34m(B)oat\n")
 
-    startChoice = input("\033[30m>> ")
+    startChoice = input("\033[30m>>\n")
 
     if startChoice == ("j"):
         print("You head for the jungle!")
@@ -141,10 +141,7 @@ def firstChoice():
 
 def secondChoice():
 
-
-
-
-    secChoice = input("\033[30m>> ")
+    secChoice = input("\033[30m>>\n")
 
     if secChoice == ("r"):
         print("You charge and sprint over the bridge!")
@@ -166,7 +163,7 @@ def secondChoice():
 
 def thirdChoice():
 
-    triChoice = input("\033[30m>> ")
+    triChoice = input("\033[30m>>\n")
 
     if triChoice == ("r"):
         print("You rush towards the boat and quickly jumps in")
