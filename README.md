@@ -1,31 +1,72 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome Robin A,
+# Cursed Island
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+![App Screenshot](https://www.simpleimageresizer.com/_uploads/photos/fd48d8b6/cursedlogo2_99.png)
 
-## Reminders
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+Cursed Island is a classic text-based adventure game inspired from the classic ones from the late late seventies like Zork and Stugan(The Cottage).
 
-## Creating the Heroku app
+[Live Link to the project](https://cursed-island.herokuapp.com/)
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
 
-1. `heroku/python`
-2. `heroku/nodejs`
+## Instructions
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
+You will face different encounters that will leave you with two choices.
+pressing the letter marked between the () brackets, Will lead you into a new scenario.
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+if you survive all scenarios you win the game!
+## Features
 
-Connect your GitHub repository and deploy as normal.
+- Colored text and cool ASCII-Art
+- Multiple choice scenarios, that takes User input
+- Game Over screen with retry option
 
-## Constraints
+![App Screenshot](https://www.simpleimageresizer.com/_uploads/photos/fd48d8b6/gameop2_99.png)
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
+### Future Features
 
------
-Happy coding!
+- Implement items that contain various info, like letters and notes
+- Implement number codes needed to pass a scenario
+- More advanced ASCII-Artwork
+
+
+
+
+
+## Testing
+
+I have manually tested the project with these methods
+
+- Run the code trough a PEP8 linter to check that everything works
+- Given invalid inputs like number and other keys in the choice options
+- Tested both in my local terminal and on Heroku
+
+
+### Bugs
+
+- No bugs where found during the making or testing of the project
+
+
+### Validator Testing
+
+- PEP8
+
+ Some minor errors found like trailing whitespaces and so on.
+ Nothing that disturbs the performance of the game. 
+## Deployment
+
+The project was deployed by first Creating an App on Heroku.com then connecting it
+to GitHub.
+
+- Create a new Heroku App
+- Add a new Config Var with an port
+- include the buildbacks `Python` and `NodeJS`
+- Connect the Heroku App to the repository
+- Click on **Deploy**
+
+
+## Credits
+
+- [ASCII-Art Generator](https://patorjk.com/software/taag/) For helping me generate the logo and game-over screen
+
+- [Colored Text in Python](https://www.studytonight.com/python-howtos/how-to-print-colored-text-in-python) For guiding me on how to add colors to console text.
