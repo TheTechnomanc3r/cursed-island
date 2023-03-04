@@ -169,7 +169,8 @@ def thirdChoice():
     triChoice = input("\033[30m>> ")
 
     if triChoice == ("r"):
-        print("You charge towards the boat")
+        print("You rush towards the boat and quickly jumps in")
+        print("The Boat looks like a good way to get out of here!\n")
         winScreen()
 
 
